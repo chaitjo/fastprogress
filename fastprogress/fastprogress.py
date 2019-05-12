@@ -247,7 +247,7 @@ class NBMasterBar(MasterBar):
         self.out2.update(self.ax.figure)
 
 class ConsoleProgressBar(ProgressBar):
-    fill:str='█'
+    fill:str='#'
 
     def __init__(self, gen, total=None, display=True, leave=True, parent=None, auto_update=True, txt_len=60):
         self.cols,_ = shutil.get_terminal_size((100, 40))
